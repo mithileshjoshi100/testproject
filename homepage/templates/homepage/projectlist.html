@@ -1,0 +1,25 @@
+
+{% extends "homepage/layout.html" %}
+
+{% block body %}
+<div class="list-group">
+    <a href="{% url 'newyear:index' %}" class="list-group-item list-group-item-action active">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">is New Year Today</h5>
+        <small>3 days ago</small>
+        </div>
+        <p class="mb-1">App will tell you whether today is new year day or not.</p>
+        <small>Simple and Basic App</small>
+    </a>
+    <a href="{% url 'tasks:index' %}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Tasks</h5>
+        <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Create Task List/To Do List</p>
+        <small class="text-muted">Based on user session, it will remember your tasks</small>
+    </a>
+</div>
+{% endblock %}
+
+ 
